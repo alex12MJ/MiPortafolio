@@ -1,0 +1,264 @@
+<section class="skills">
+    <div class="section-title">
+        <div class="icon-container">
+            <i class="fa-sharp-duotone fa-solid fa-gear"></i>
+        </div>
+        <h5>Habilidades</h5>
+    </div>
+
+   <div class="languagesProm">
+
+    <div class="category">
+        <h6>Lenguajes de programación y tecnologías</h6>
+        <div class="languages">
+            <span class="badge">Java</span>
+            <span class="badge">Kotlin</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">C#</span>
+            <span class="badge">SQL</span>
+            <span class="badge">React Native</span>
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">Bootstrap</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h6>Bases de datos</h6>
+        <div class="languages">
+            <span class="badge">MySQL</span>
+            <span class="badge">PostgreSQL</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h6>Entornos de desarrollo (IDE)</h6>
+        <div class="languages">
+            <span class="badge">Android Studio</span>
+            <span class="badge">IntelliJ IDEA</span>
+            <span class="badge">VS Code</span>
+            <span class="badge">Visual Studio</span>
+            <span class="badge">NetBeans</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h6>Herramientas adicionales</h6>
+        <div class="languages">
+            <span class="badge">Maven</span>
+            <span class="badge">Git / GitHub</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h6>Habilidades personales</h6>
+        <div class="languages">
+            <span class="badge">Resolución de problemas</span>
+            <span class="badge">Aprendizaje autónomo</span>
+            <span class="badge">Trabajo en equipo</span>
+            <span class="badge">Pensamiento lógico</span>
+        </div>
+    </div>
+
+</div>
+
+
+    <style>
+        
+.skills {
+    background-color: var(--color-cards);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Icono del encabezado */
+.icon-container {
+    background-color: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon-container i {
+    color: white;
+    font-size: 25px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.section-title h5 {
+    margin: 0;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+
+.languagesProm {
+    display: grid;
+    grid-template-columns: 2fr 0.9fr 1.3fr 0.9fr 1.1fr;
+    gap: 0;
+    margin-top: 15px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+
+.category {
+    padding: 0 10px;
+    border-right: 1px solid #e2e8f0;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.category:first-child {
+    padding-left: 0;
+}
+
+.category:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+
+.category h6 {
+    padding-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.4;
+}
+
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 5px;
+    padding-top: 5px;
+    min-width: 0;
+}
+
+
+.languages .badge {
+    background-color: #edf3f9;
+    color: #526579;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: normal;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 1000px) {
+    .languagesProm {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 20px;
+    }
+
+    .category:nth-child(3) {
+        border-right: none;
+    }
+
+    .category:nth-child(4) {
+        padding-left: 0;
+    }
+
+    .category:last-child {
+        border-right: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .skills {
+        padding: 15px;
+    }
+
+    .languagesProm {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 20px;
+    }
+
+    .category {
+        padding: 0 10px;
+    }
+
+    .category:first-child,
+    .category:nth-child(3),
+    .category:nth-child(5) {
+        padding-left: 0;
+        border-right: 1px solid #e2e8f0;
+    }
+
+    .category:nth-child(even) {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .category:last-child {
+        border-right: 1px solid #e2e8f0;
+    }
+
+    .category h6 {
+        font-size: 12px;
+    }
+
+    .languages .badge {
+        font-size: 11px;
+        padding: 4px 7px;
+    }
+}
+
+@media (max-width: 380px) {
+    .languagesProm {
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+    }
+
+    .category,
+    .category:first-child,
+    .category:nth-child(3),
+    .category:nth-child(5),
+    .category:nth-child(even),
+    .category:last-child {
+        border-right: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .category {
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .category:last-child {
+        border-bottom: none;
+    }
+
+    .category h6 {
+        font-size: 13px;
+    }
+}
+
+    </style>
+</section>

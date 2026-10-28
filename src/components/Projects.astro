@@ -1,0 +1,202 @@
+<section class="projects-section">
+   
+    <div class="section-title">
+        <div class="icon-container">
+            <i class="fa-duotone fa-solid fa-folder"></i>
+        </div>
+        <h5>Proyectos personales destacados</h5>
+    </div>
+
+    
+    <div class="projects-grid">
+        
+      
+        <div class="project-card">
+            <div class="card-left">
+                <img src="ball.png" alt="" class="project-icon">
+            </div>
+            <div class="card-right">
+                <h6>Pokédex – App móvil (React Native)</h6>
+                <p>Aplicación desarrollada como proyecto de práctica con React Native. Permite consultar y visualizar información de Pokémon.</p>
+                <span class="badge bg-primary rounded-pill shadow">React Native</span>
+            </div>
+        </div>
+
+      
+        <div class="project-card">
+            <div class="card-left">
+                <img src="calories.png" alt="" class="project-icon">
+            </div>
+            <div class="card-right">
+                <h6>Control de calorías – App móvil (React Native)</h6>
+                <p>Registro diario de calorías. Permite agregar alimentos, acumular registros y mostrar un contador y gráfica con el total consumido.</p>
+               <span class="badge bg-primary rounded-pill shadow">React Native</span>
+            </div>
+        </div>
+
+       
+        <div class="project-card">
+            <div class="card-left">
+                <img src="picturealbum.png" alt="" class="project-icon">
+            </div>
+            <div class="card-right">
+                <h6>Álbum de fotos – App móvil (Kotlin)</h6>
+                <p>Galería que usa RecyclerView para mostrar fotos y videos. Incluye vista de detalles y opción para agregar nuevos archivos.</p>
+                <span class="badge bg-success rounded-pill shadow">Kotlin</span>
+            </div>
+        </div>
+
+      
+        <div class="project-card">
+            <div class="card-left">
+                <img src="horoscope.png" alt="" class="project-icon">
+            </div>
+            <div class="card-right">
+                <h6>Horóscopos – App móvil (Kotlin)</h6>
+                <p>Lista con el significado de los signos zodiacales. Incluye ruleta interactiva para conocer tu suerte y lectura de la palma de la mano.</p>
+                <span class="badge bg-success rounded-pill shadow">Kotlin</span>
+            </div>
+        </div>
+
+      
+        <div class="project-card">
+            <div class="card-left">
+                <img src="imc.png" alt="" class="project-icon">
+            </div>
+            <div class="card-right">
+                <h6>Calculadora de IMC – App móvil (Kotlin)</h6>
+                <p>Calculadora de Índice de Masa Corporal con diseño visual amigable. Muestra el estado según los datos ingresados y algunas recomendaciones.</p>
+                <span class="badge bg-success rounded-pill shadow">Kotlin</span>
+            </div>
+        </div>
+
+     
+        <div class="project-card">
+            <div class="card-left">
+                <img src="point.png" alt="" class="project-icon">
+            </div>
+            <div class="card-right">
+                <h6>Punto de venta – Aplicación de escritorio</h6>
+                <p>Permite agregar, borrar y comprar productos. Integra base de datos MySQL para manejar
+                     inventario en tiempo real. Tambien permite agregar images</p>
+                <span class="badge bg-warning rounded-pill shadow">Java / Maven / MySQL</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    
+
+   
+<style>
+
+.projects-section {
+  background-color: var(--color-cards);
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  border-radius: 15px;
+  padding: 0;
+  margin-top: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px;
+  background-color: #fff;
+  min-width: 0;
+  box-sizing: border-box;
+  min-height: 160px;
+}
+
+.project-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.card-right {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.card-right h6 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.card-right p {
+  margin-bottom: 12px;
+}
+
+
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.icon-container {
+        background-color: var(--color-primary);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+      .icon-container i {
+        color: white;
+        font-size: 25px;
+    }
+     .section-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+     .section-title h5 {
+        margin: 0;
+    }
+    h5 {
+        color: var(--color-text);
+        font-weight: bold;
+    }
+     h6 {
+        color: var(--color-text);
+        font-weight: bold;
+        
+    }
+     p {
+        color: var(--color-text);
+    }
+
+
+</styly>

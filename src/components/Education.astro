@@ -1,0 +1,116 @@
+<header>
+    <div class="section-title">
+        <div class="icon-container">
+            <i class="fa-duotone fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <h5>Educación</h5>
+    </div>
+    
+<div class="education">
+  <div class="education-item">
+    <h6>Ingeniería en Sistemas Computacionales</h6>
+    <p>Cuautitlán Izcalli, Estado de México</p>
+    <p>2024 – 2027 (en curso)</p>
+  </div>
+
+  <div class="education-item">
+    <h6>Técnico en Programación</h6>
+    <p>Escuela Teoloyucan, Teoloyucan, Estado de México</p>
+    <p>3 años</p>
+  </div>
+</div>
+
+</header>
+
+<style>
+    header {
+        margin-left: 150px;
+        background-color: var(--color-cards);
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 650px;
+        box-sizing: border-box; 
+    }
+    h5 {
+        color: var(--color-text);
+        font-weight: bold;
+    }
+    h6 {
+        color: var(--color-text);
+        font-weight: bold;
+    }
+    p {
+        color: var(--color-text);
+        margin: 0px 0;
+    }
+    .icon-container {
+        background-color: var(--color-primary);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .icon-container i {
+        color: white;
+        font-size: 25px;
+    }
+    .section-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .section-title h5 {
+        margin: 0;
+    }
+    
+.education {
+  margin-top: 10px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.education-item {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.education-item::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 10px;
+  bottom: -5px;
+  width: 2px;
+  background-color: #cbd5e1;
+}
+
+.education-item::after {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffc107;
+}
+
+.education-item:last-child::before {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        margin-left: 15px; 
+        margin-right: 15px;
+        width: auto;   
+    }
+}
+</style>

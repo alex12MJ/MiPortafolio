@@ -1,0 +1,46 @@
+
+/* Colores principales */
+:root {
+  --color-dark: #1E2428;
+  --color-primary: #F4B400;
+  --color-background: #F5F7FA;
+  --color-cards: #ffffff;
+  --color-text: #263746;
+  --color-muted: #64748B;
+}
+
+/* Estilos generales */
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  color: var(--color-dark);
+  font-weight: 700;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+}
+
+/* Botones personalizados */
+.btn-custom {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-custom:hover {
+  background-color: #D99D00;
+  border-color: #D99D00;
+  color: var(--color-dark);
+}
